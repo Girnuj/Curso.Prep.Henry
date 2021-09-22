@@ -8,31 +8,92 @@ archivo en cualquiera de estas carpetas, estás en el lugar equivocado.
 /* Arrancaremos este ejercicio por vos: */
 #ejercicioUno {
 
+display: block;
+text-align: center;
 }
 
 
 /* Ejercicio 2: Posicionar el header */
 
 /* Acá va tu código */
+#ejercicioDos{
+    opacity: 00;
+}
 
 
 
 /* Ejercicio 3: */
 
 /* Acá va tu código */
+#ejercicioTres{
+    position: relative;
+    top: 100px;
+    left: 200px;
 
+}
 
 
 /* Ejercicio 4: */
 
 /* Acá va tu código */
-
+#ejercicioCuatro{
+display: flex;  
+    position: absolute;
+    top: 0px;
+   
+}
 
 
 /* Ejercicio 5: */
 
 /* Acá va tu código */
-
+#ejercicioCinco{
+    display: flex;
+    align-items: center;
+    /* lo centre verticalmente como en columnas con el flex-direction: column, 
+    es lo que entendi cuando dice centrar verticalmente, aunque esteticamente 
+    no queda muy lindo, asique no debe ser asi :/ */
+    /* flex-direction: column; */
+    justify-content: space-around;
+   
+    
+  
+}
 
 
 /* Ejercicio 6. */
+#ejercicioCinco {
+    flex-direction: row-reverse; 
+}
+
+#elementoUno{
+    display: relative;
+    position: absolute;
+    bottom: 62px;
+    justify-content: right;
+    left: 35px;
+    
+}
+
+#elementoDos{
+    display: flex;
+    position: relative;
+    left: 55px;
+    justify-content: center;
+    top: 35px;
+}
+#elementoTres{
+display: absolute;
+position: relative;
+align-items: center;
+top: 73px;
+left: 85px;
+}
+
+#elementoCuatro{
+    display: flex;
+    position: absolute;
+    align-items: left;
+    right: 84px ;
+    bottom: 47px;
+}
