@@ -198,7 +198,8 @@ function tablaDelSeis(){
   let array6 = []
           //importante
   //valor de i     //11 es hasta donde hace el bucle
-  for (let i = 0; i < 11; i++) {
+               //i < 11
+  for (let i = 0; i <= 10; i++) {
     array6.push (6 * i)
     
   }
@@ -225,7 +226,7 @@ function doWhile(numero) {
      a = a + 5;
    }
   
-  while(i < 8)
+  while(i < 8) //cuando tenes el limite del ciclo
    return a;
 
 // for (let i = 0; i < 8; i++){

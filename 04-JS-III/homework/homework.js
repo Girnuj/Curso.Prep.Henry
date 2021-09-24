@@ -27,9 +27,10 @@ function incrementarPorUno(array) {
   // y devuelve el array
   // Tu código:
   var asd = []
+   //             cuando i sea menor a la longitud del arreglo
   for (let i = 0; i < array.length; i++) {
     asd [i] = array[i] + 1;
-    
+    // asd.push(array[i] + 1) push agrega un valor al final del array
   }
   return asd;
 }
@@ -81,7 +82,7 @@ function agregarNumeros(numeros) {
   // Tu código:
  var suma = 0;
  for (let i = 0; i < numeros.length; i++) {
-   suma = suma + numeros [i];
+   suma = suma + numeros [i];                 //Importante crear la variable antes del ciclo para devolver esa msima variable pasada por el bucle
 
     }
 return suma;
@@ -92,6 +93,7 @@ function promedioResultadosTest(resultadosTest) {
   // "resultadosTest" debe ser una matriz de enteros (int/integers)
   // Itera (en un bucle) los elementos del array, calcula y devuelve el promedio de puntajes
   // Tu código:
+     // estoy llamando a la funcion de arriba, se pueden llamar siempre y cuando n oesten comentadas
 return agregarNumeros(resultadosTest) / resultadosTest.length;
 }
 
@@ -104,9 +106,10 @@ function numeroMasGrande(numeros) {
   // return mayor
 
   var mayor = numeros[0];
+          //recorre todo el arreglo y si hay un numero grande, devolverlo
   for (let i = 0; i < numeros.length; i++) {
     if ( numeros [i] > mayor )
-    { mayor = numeros[i]}
+    { mayor = numeros[i]} //pisa el numero anterior para devolverlo
     
      }
   return mayor;
@@ -134,8 +137,8 @@ function cuentoElementos(arreglo){
   var cantidadElementos = 0;
   for (let i = 0; i < arreglo.length; i++) {
     
-    if (arreglo[i] > 19)
-    {cantidadElementos++}
+    if (arreglo[i] > 19) //si dentro del bucle cumple esta funcion
+    {cantidadElementos++} //incrementa el valor en 1 y lo retorna
        
   }
 return cantidadElementos;
@@ -156,8 +159,10 @@ function empiezaConNueve(n) {
   //Desarrolle una función que recibe como parámetro un número entero n. Debe retornar true si el entero 
   //inicia con 9 y false en otro caso.
   //Escribe tu código aquí
-  var num = n.toString();
+  var num = n.toString(); //verifica la longitud
+      //comienza con 9
   if (num.charAt (0) === '9'){
+     //  numero[0]
     return true
   }
   return false
@@ -187,7 +192,7 @@ function mesesDelAño(array) {
   var NewArray = [];
   for(let i= 0; i<array.length; i++) {
     if(array[i] === "Enero" || array[i] === "Marzo" || array[i] === "Noviembre") {
-      NewArray.push(array[i]);
+      NewArray.push(array[i]); // agrega el valor del array al nuevo arreglo
     }
   }
 if (NewArray.length < 3 ){
@@ -203,8 +208,8 @@ function mayorACien(array) {
   // Tu código:
   var NewArray2 = [];
   for (let i = 0; i < array.length; i++) {
-    if (array [i] > 100){
-      NewArray2.push(array[i])
+    if (array [i] > 100){ //cuando los valores son mayores a 100
+      NewArray2.push(array[i])// imprimir
     }
  }
 return NewArray2;
